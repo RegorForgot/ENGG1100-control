@@ -3,3 +3,9 @@
 /.vscode/settings.json
 /.idea/workspace.xml
 .gitignore
+.idea/deployment.xml
+.idea/discord.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/inspectionProfiles/profiles_settings.xml
