@@ -42,13 +42,13 @@ frame_1 = customtkinter.CTkFrame(master=app)
 frame_1.pack(pady=0, padx=0, fill="both", expand=True)
 
 frame_2 = customtkinter.CTkFrame(master=frame_1, width=250, height=500)
-frame_2.place(x=312.5, y=280, anchor="center")
+frame_2.place(x=300, y=280, anchor="center")
 
 frame_3 = customtkinter.CTkFrame(master=frame_1, width=550, height=500)
 frame_3.place(x=755, y=280, anchor="center")
 
 frame_4 = customtkinter.CTkFrame(master=frame_1, width=250, height=500)
-frame_4.place(x=1215, y=280, anchor="center")
+frame_4.place(x=1210, y=280, anchor="center")
 
 # creating a textbox (OUTPUT CONSOLE)
 result = customtkinter.CTkTextbox(master=frame_1, width=550, height=250, font=customtkinter.CTkFont(size=25, weight="bold"))
