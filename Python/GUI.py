@@ -44,11 +44,11 @@ drive_speed_2 = customtkinter.CTkLabel(master=frame_1, text="-100%", font=('Aria
 drive_speed_2.pack(pady=10, padx=10)
 drive_speed_2.place(x=200, y=320)
 
-pan_speed_1 = customtkinter.CTkLabel(master=frame_1, text=" 90", font=('Arial', 25))
+pan_speed_1 = customtkinter.CTkLabel(master=frame_1, text="-90", font=('Arial', 25))
 pan_speed_1.pack(pady=10, padx=10)
 pan_speed_1.place(x=570, y=150)
 
-pan_speed_2 = customtkinter.CTkLabel(master=frame_1, text="-90", font=('Arial', 25))
+pan_speed_2 = customtkinter.CTkLabel(master=frame_1, text=" 90", font=('Arial', 25))
 pan_speed_2.pack(pady=10, padx=10)
 pan_speed_2.place(x=870, y=150)
 
