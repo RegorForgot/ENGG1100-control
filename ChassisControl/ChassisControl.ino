@@ -27,12 +27,10 @@ void setup()
     pinMode(pump, OUTPUT);
     pinMode(motorBack, OUTPUT);
     pinMode(motorForward, OUTPUT);
-    // Servo control pin and range as calibrated
-    pan.attach(12, 500, 2300);
-    tilt.attach(13, 500, 2300);
 
-    pan.writeMicroseconds(currentPan);
-    tilt.writeMicroseconds(currentTilt);
+    // Servo control pin and range as calibrated
+    pan.attach(12);
+    tilt.attach(13);
 
     // Setting up serial and PWM range/frequency
     Serial.begin(115200);
@@ -85,7 +83,7 @@ void moveBidirectional(int input, int &currentVal, Servo &servo, bool tilt)
     if (input < (maxJoystick - deadzone) / 2)
     {
         // Checks if servo amount is over the maximum allowed value
-        if (currentVal < 2090)
+        if (currentVal < 2140)
         {
             currentVal += (int)floor(((maxJoystick - deadzone) / 2 - input) * servoSensitivity);
             servo.writeMicroseconds(currentVal);

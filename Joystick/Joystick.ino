@@ -1,8 +1,8 @@
 // Pin numbers for each measurement
-const int topButton = 8;
-const int analogBottom = 3;
-const int analogTopY = 1;
-const int analogTopX = 0;
+const int analogBottom = A1;
+const int analogTopX = A2;
+const int analogTopY = A3;
+const int topButton = A4;
 
 void setup()
 {
@@ -20,8 +20,8 @@ void loop()
     Serial.print(",");
     Serial.print(digitalRead(topButton));
     Serial.print(",");
-    Serial.print(analogRead(analogTopY));
+    Serial.print(1023-analogRead(analogTopY));
     Serial.print(",");
-    Serial.println(1023 - analogRead(analogTopX));
+    Serial.println(analogRead(analogTopX));
     delay(50);
 }
